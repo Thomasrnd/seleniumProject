@@ -22,14 +22,14 @@ Feature: Login
       |Testing Gist     |Testing Gist 1 |Test1      |
 
   @SeeAllGist
-  Scenario: editing gist
+  Scenario: see all gist
     Given that i want to access "https://gist.github.com/"
     When i want to login with "your_username" and "your_password"
     Then should navigate to gist homepage
     And i want to see all my gist
 
   @DeleteGist
-  Scenario: editing gist
+  Scenario: deleting gist
     Given that i want to access "https://gist.github.com/"
     When i want to login with "your_username" and "your_password"
     Then should navigate to gist homepage
