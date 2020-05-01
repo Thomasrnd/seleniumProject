@@ -4,7 +4,7 @@ Feature: Login
   @CreateGist
   Scenario: creating gist
     Given that i want to access "https://gist.github.com/"
-    When i want to login with "thomasrnd02@gmail.com" and "Thr5411692!"
+    When i want to login with "your_username" and "your_password!"
     Then should navigate to gist homepage
     And i want to create gist
     When i want to create gist file with following
@@ -14,7 +14,7 @@ Feature: Login
   @EditGist
   Scenario: editing gist
     Given that i want to access "https://gist.github.com/"
-    When i want to login with "thomasrnd02@gmail.com" and "Thr5411692!"
+    When i want to login with "your_username" and "your_password!"
     Then should navigate to gist homepage
     And i want to update gist
     When i want to edit gist file with following
@@ -24,13 +24,13 @@ Feature: Login
   @SeeAllGist
   Scenario: editing gist
     Given that i want to access "https://gist.github.com/"
-    When i want to login with "thomasrnd02@gmail.com" and "Thr5411692!"
+    When i want to login with "your_username" and "your_password!"
     Then should navigate to gist homepage
     And i want to see all my gist
 
   @DeleteGist
   Scenario: editing gist
     Given that i want to access "https://gist.github.com/"
-    When i want to login with "thomasrnd02@gmail.com" and "Thr5411692!"
+    When i want to login with "your_username" and "your_password!"
     Then should navigate to gist homepage
     And i want to delete gist
